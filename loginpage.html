@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="loginpage.css">
+    <title>login page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form id="registration-form" action="https://script.google.com/macros/s/AKfycbyOUtxETng_o4BFkxFkTO2N1QGOjwEnpV_7KArnthl4Yxl3yFgkGwfB9IRE1W4sNBWX/exec" method="post">
+            <div class="user-details">
+                <div class="input-box">
+                      <span class="details">Full Name</span>
+                      <input type="text" name="fullname" placeholder="Enter Your Name" required />
+                </div>
+                 <div class="input-box">
+                    <span class="details">age</span>
+                    <input type="text" name="age" placeholder="Enter Your age" required>
+                </div>
+                 <div class="input-box">
+                    <span class="details">Birthday</span>
+                    <input type="text" name="birthday" placeholder="Enter Your Birth Day" required />
+                </div>
+                 <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" name="phone" placeholder="Enter Phone Number" required>
+                </div>
+                 <div class="input-box">
+                    <span class="details"> school </span>
+                    <input type="text" name="school" placeholder="Enter your school" required>
+                </div> 
+                 <div class="input-box">
+                    <span class="details"> Grade </span>
+                    <input type="text" name="grade" placeholder="Enter your grade" required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+               <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+
+<script>
+  document.getElementById("registration-form").addEventListener("submit", function () {
+    setTimeout(function () {
+      window.location.replace("mode.html"); // arahkan ke file lokal
+    }, 500);
+  });
+</script>
+
+</body>
+</html>

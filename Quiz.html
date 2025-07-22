@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Rambu</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+    <div class="config-container">
+        <h2 class="config-title">Games Configuration</h2>
+
+        <div class="config-option">
+            <h4 class="option-title">Select Category</h4>
+            <div class="category-option">
+
+                <button class="category-options active">Red sign</button>
+                <button class="category-options">Blue sign</button>
+                <button class="category-options">Yellow sign</button>
+                <button class="category-options">Study case</button>
+            </div>
+        </div>
+
+         <div class="config-option">
+            <h4 class="option-title">No. of Question</h4>
+            <div class="question-options">
+                <button class="question-option">5</button>
+                <button class="question-option active">10</button>
+            </div>
+        </div>
+
+        <button class="start-quiz-btn">Start Quiz</button>
+    </div>
+
+<div class="quiz-container">
+    <header class="quiz-header">
+    <h2 class="quiz-title">Quiz Section</h2>
+    <div class="quiz-timer">
+    <span class="material-symbols-rounded">timer</span>
+     <p class="time-duration">15s</p>
+    </div>
+</header>
+
+<div class="quiz-content">
+    <h1 class="question-text">Apa warna dasar dari rambu larangan?</h1>
+    <ul class="answer-options"></ul>
+</div>
+
+<div class="quiz-footer">
+    <p class="question-status"></p>
+    <button class="next-question-btn">
+        next
+       <span class="material-symbols-rounded">arrow_right_alt</span>
+    </button>
+</div>
+</div>
+
+<!-- Result Container -->
+<div class="result-container">
+    <img src="images/quiz-over.png" class="result-img">
+    <h2 class="result-title">Quiz completed!</h2>
+    <p class="result-message"></p>
+    <button class="try-again-btn">Try Again</button>
+</div>
+
+<script src="Javascript/questions_rambu_full.js"></script>
+<script src="Javascript/Quiz.js"></script>
+</body>
+</html>
